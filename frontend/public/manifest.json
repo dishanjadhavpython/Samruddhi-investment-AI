@@ -1,0 +1,23 @@
+{
+  "name": "Samruddhi AI",
+  "short_name": "Samruddhi",
+  "description": "Samruddhi AI: portfolio analytics for Indian investors",
+  "theme_color": "#F8F9F8",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/dashboard",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[project]
+name = "market"
+version = "0.1.0"
+description = "Index-level market context: valuation temperature, turbulence and history tables"
+requires-python = ">=3.12"
+dependencies = [
+    "samruddhi-database",
+    "boto3>=1.40.29",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "python-dotenv>=1.1.1",
+    "yfinance==1.7.0",
+]
+
+[tool.uv.sources]
+samruddhi-database = { workspace = true }

@@ -1,0 +1,16 @@
+# Copy this file to terraform.tfvars and fill in the values below.
+
+# AWS region for all resources in this directory (same as Aurora)
+aws_region = "us-east-1"
+
+# From Part 5 (terraform/5_database):
+#   cd terraform/5_database && terraform output aurora_cluster_arn
+#   cd terraform/5_database && terraform output aurora_secret_arn
+aurora_cluster_arn = "arn:aws:rds:us-east-1:123456789012:cluster:samruddhi-aurora-cluster"
+aurora_secret_arn  = "arn:aws:secretsmanager:us-east-1:123456789012:secret:samruddhi-db-credentials-XXXXXX"
+
+aurora_database = "samruddhi"
+
+# Leave false until you've invoked the Lambda once and checked its output.
+# true runs it every weekday at 19:00 IST.
+enable_scheduler = false

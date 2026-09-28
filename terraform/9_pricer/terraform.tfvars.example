@@ -1,0 +1,18 @@
+# Copy this file to terraform.tfvars and fill in the values below.
+
+# AWS region for all resources in this directory
+aws_region = "us-east-1"
+
+# From Part 5 (terraform/5_database):
+#   cd terraform/5_database && terraform output aurora_cluster_arn
+#   cd terraform/5_database && terraform output aurora_secret_arn
+aurora_cluster_arn = "arn:aws:rds:us-east-1:123456789012:cluster:samruddhi-aurora-cluster"
+aurora_secret_arn  = "arn:aws:secretsmanager:us-east-1:123456789012:secret:samruddhi-db-credentials-XXXXXX"
+
+# Usually "samruddhi" - matches the database name used throughout the project
+aurora_database = "samruddhi"
+
+# Safety toggle - leave false until you've manually invoked and verified the
+# Lambda. Setting this to true (and re-applying) turns on the schedules that
+# refresh prices every 5 minutes, 09:15-15:45 IST, Monday to Friday.
+enable_scheduler = false

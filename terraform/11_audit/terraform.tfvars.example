@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars
+aws_region = "us-east-1"
+
+# Object Lock: GOVERNANCE lets an administrator override; COMPLIANCE does not
+lock_mode      = "GOVERNANCE"
+retention_days = 365
